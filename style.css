@@ -370,7 +370,7 @@ ul {
 }
 
 /* Button Style */
-.submit-btn {
+.submit-btn ,.btn-send{
     background-color: #ff6347;
     color: white;
     padding: 10px 20px;
@@ -383,7 +383,8 @@ ul {
     margin: 20px auto;
 }
 
-.submit-btn:hover {
+.submit-btn:hover,.btn-send:hover
+ {
     background-color: #ff4500;
 }
 
@@ -438,7 +439,7 @@ ul {
     appearance: none;
 }
 
-.contact-us button.submit-btn {
+.contact-us button.submit-btn ,.contact-us button.btn-send{
     padding: 12px 20px;
     background-color: #ff6347;
     color: white;
@@ -450,7 +451,7 @@ ul {
     text-transform: uppercase;
 }
 
-.contact-us button.submit-btn:hover {
+.contact-us button.submit-btn:hover,.contact-us button.btn-send:hover {
     background-color: #e56d33;
 }
 

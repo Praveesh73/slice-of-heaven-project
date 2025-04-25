@@ -40,12 +40,22 @@
                                 <li><a href="about.html">About Us</a></li>
                             </ul>
                         </nav>
-                        <div class="header-right">
-                            <form action="#" class="header-search-form for-des">
-                                <input type="search" class="form-input" placeholder="Search Here...">
-                                <button type="submit">
-                                    <i class="uil uil-search"></i>
-                                </button>
+
+                            <div class="header-right">
+                                <!-- Search Form -->
+                                    <form action="categories.php" class="header-search-form for-des">
+                                        <form action="search.php" class="header-search-form for-des" method="get">
+                                            <input type="search" name="query" class="form-input" placeholder="Search Here..." required>
+                                            <button type="submit">
+                                    </button>
+                                </form>
+                                
+                                <!-- Sign-In Form -->
+                                <form action="addRecipe.html" method="get">
+                                    <button type="submit" class="btn-sign-in">Add Recipe</button>
+                                </form>
+                            </div>
+
                             </form>
 
                         </div>
@@ -241,7 +251,6 @@
                 <a href="#">2</a>
                 <a href="#"><i class="fal fa-long-arrow-alt-right"></i></a><br>
             </section>
-
                         <!-- footer starts  -->
                         <footer class="site-footer" id="contact">
                             <div class="top-footer section">
@@ -289,9 +298,9 @@
                                                     <div class="footer-menu">
                                                         <h3 class="h3-title">About</h3>
                                                         <ul>
-                                                            <li><a href="#">About Us</a></li>
-                                                            <li><a href="#">FAQ</a></li>
-                                                            <li><a href="#">Contact Us</a></li>
+                                                            <li><a href="about.html">About Us</a></li>
+                                                            <li><a href="about.html">FAQ</a></li>
+                                                            <li><a href="about.html">Contact Us</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>

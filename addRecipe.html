@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Add Pizza Recipe</h1>
+    </header>
+    <main>
+        <form id="recipe-form">
+            <label for="recipe-name">Name of the pizza recipe:</label>
+            <input type="text" id="recipe-name" name="recipe-name" required>
+
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" name="ingredients" required></textarea>
+
+            <label for="instructions">Instructions:</label>
+            <textarea id="instructions" name="instructions" required></textarea>
+
+            <label for="special-notes">Special note:</label>
+            <textarea id="special-notes" name="special-notes"></textarea>
+
+            <button type="submit">Add Recipe</button>
+        </form>
+    </main>
+   
+<script>
+
+document.getElementById('recipe-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const recipeName = document.getElementById('recipe-name').value;
+    const ingredients = document.getElementById('ingredients').value;
+    const instructions = document.getElementById('instructions').value;
+    const specialNotes = document.getElementById('special-notes').value;
+
+    const recipeItem = document.createElement('div');
+    recipeItem.innerHTML = `
+        <h3>${recipeName}</h3>
+        <p><strong>Ingredients:</strong> ${ingredients}</p>
+        <p><strong>Instructions:</strong> ${instructions}</p>
+        <p><strong>Special Note:</strong> ${specialNotes}</p>
+    `;
+    document.body.appendChild(recipeItem);
+
+    // Clear the form fields
+    document.getElementById('recipe-form').reset();
+});
+</script>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #ff6347;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+main {
+    width: 80%;
+    max-width: 600px;
+    margin: 2em auto;
+    background-color: #f9f9f9;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 1em;
+    padding: 1em;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff4500;
+}
+</style>
+</body>
+</html>

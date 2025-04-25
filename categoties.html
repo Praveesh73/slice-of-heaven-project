@@ -48,10 +48,13 @@
                             </ul>
                         </nav>
                         <div class="header-right">
-                            <form action="#" class="header-search-form for-des">
-                                <input type="search" class="form-input" placeholder="Search Here...">
-                                <button type="submit">
-                                    <i class="uil uil-search"></i>
+                            <form action="categories.php" class="header-search-form for-des">
+                                <form action="search.php" class="header-search-form for-des" method="get">
+                                    <input type="search" name="query" class="form-input" placeholder="Search Here..." required>
+                                    <button type="submit">
+                                        <i class="uil uil-search"></i>
+                                    </button>
+                                </form>
                                 </button>
                             </form>
                         </div>
@@ -397,9 +400,9 @@
                                         <li>
                                             <a href="#home">Home</a>
                                         </li>
-                                        <li><a href="#recipes" class="footer-active-menu">Recipes</a></li>
-                                        <li><a href="#categories">Categories</a></li>
-                                        <li><a href="#About Us">About Us</a></li>
+                                        <li><a href="about.html" class="footer-active-menu">Recipes</a></li>
+                                        <li><a href="#about.html">Categories</a></li>
+                                        <li><a href="#about.html">About Us</a></li>
                                     </ul>
                                 </div>
                                 <div class="footer-menu">

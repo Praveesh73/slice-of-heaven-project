@@ -42,15 +42,10 @@
                         </nav>
                         <div class="header-right">
                             <!-- Search Form -->
-                            <form action="#" class="header-search-form for-des">
-                                <input 
-                                    type="search" 
-                                    class="form-input" 
-                                    placeholder="Search Here..." 
-                                    aria-label="Search"
-                                >
-                                <button type="submit" class="search-button">
-                                    <i class="uil uil-search"></i>
+                                <form action="categories.php" class="header-search-form for-des">
+                                    <form action="search.php" class="header-search-form for-des" method="get">
+                                        <input type="search" name="query" class="form-input" placeholder="Search Here..." required>
+                                        <button type="submit">
                                 </button>
                             </form>
                             
@@ -89,10 +84,10 @@
                                     <h1 class="h1-title">Slice of Heaven</h1>
                                     <p>Discover mouth-watering pizza ideas, from classic favorites to gourmet creations, all in one place. Explore, create, and savor the joy of making perfect pizzas at home!</p>
                                     <div class="search">
-                                        <form action="#" class="body-search-form for-des">
-                                            <input type="search" class="form-input" placeholder="Search Pizza Recipe Here...">
-                                            <button type="submit">
-                                                <i class="uil uil-search"></i>
+                                            <form action="categories.php" class="header-search-form for-des">
+                                                <form action="search.php" class="header-search-form for-des" method="get">
+                                                    <input type="search" name="query" class="form-input" placeholder="Search Here..." required>
+                                                    <button type="submit">
                                             </button>
                                         </form>
                                     </div>
@@ -253,9 +248,9 @@
                                                             <li>
                                                                 <a href="#home" class="footer-active-menu">Home</a>
                                                             </li>
-                                                            <li><a href="#recipes">Recipes</a></li>
-                                                            <li><a href="#categories">Categories</a></li>
-                                                            <li><a href="#About Us">About Us</a></li>
+                                                            <li><a href="#about.html">Recipes</a></li>
+                                                            <li><a href="#about.html">Categories</a></li>
+                                                            <li><a href="#about.html">About Us</a></li>
                                                         </ul>
                                                     </div>
                                                     <div class="footer-menu">
