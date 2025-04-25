@@ -56,46 +56,28 @@ This should provide a thorough overview of your project, from setup to usage!
 
 
 ## Folder Structure
-
+```
 slice-of-heaven-project/
 │
-
 ├── assets/
-
 │   ├── css/
-
 │   │   └── styles.css
-
 │   ├── images/
-
 │   └── js/
-
 │       └── script.js
-
 │
-
 ├── includes/
-
 │   └── db.php
-
 │
-
 ├── uploads/
-
 │
-
 ├── index.php
-
 ├── add_recipe.php
-
 ├── recipe_details.php
-
 ├── search.php
-
 ├── about.php
-
 └── contact.php
-
+```
 
 Access it from http://localhost/Slice_of_heaven
 
