@@ -59,7 +59,9 @@ This should provide a thorough overview of your project, from setup to usage!
 
 slice-of-heaven-project/
 │
+
 ├── assets/
+
 │   ├── css/
 │   │   └── styles.css
 │   ├── images/
